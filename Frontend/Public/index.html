@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Aaron Colley's CV</title>
+  <link rel="stylesheet" href="./assets/stylesheets/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1"
+  
   </head>
 
   <body>
   <main>
     <header>
-      <h1>Aaron<br>
+      <h1 class="name">Aaron<br>
         Colley</h1>
       <p>
         Address: Redacted<br>
@@ -18,9 +20,7 @@
         LinkedIn: <a href="https://linkedin.com/in/a-colley/" target="_blank" rel="noopener">https://linkedin.com/in/a-colley/</a>
       </p>
     </header>
-
     <section class="Profile">
-      <h2>Profile</h2>
       <p>
         IT leader with 15 years’ experience in service delivery, infrastructure support, and technical
         operations, now focused on cloud security and architecture. I’ve successfully led global service
@@ -31,9 +31,9 @@
       </p>
     </section>
 
-    <section class="Skills">
-      <h2>Skills</h2>
-      <ul>
+    <section>
+      <h2 class="Skills">Skills</h2>
+      <ul class="list">
         <li>Azure Security</li>
         <li>IAM (RBAC, MFA)</li>
         <li>Zero Trust</li>
@@ -53,8 +53,12 @@
       <h2>Experience</h2>
 
       <article>
-        <h3>Technical Services Manager / Trison UK, Hertfordshire</h3>
-        <p><em>09/2022 - Current</em></p>
+        <p><em class="date">09/2022 - Current</em></p>
+        <h3>
+            <span class="job-title">Technical Services Manager</span>
+            /
+             <span class="company">Trison UK, Hertfordshire</span>
+        </h3>
         <ul>
           <li>Directed and managed a department of 20+ engineers and analysts, with coaching, performance check-ins and personal development.</li>
           <li>Applied OKRs to help implement company-wide policy, standardise processes, and keep teams pointed at real results.</li>
@@ -68,8 +72,12 @@
       </article>
 
       <article>
-        <h3>Technical Services Team Leader / Trison UK, Hertfordshire</h3>
-        <p><em>03/2016 - 09/2022</em></p>
+       <p><em>03/2016 - 09/2022</em></p>
+        <h3>
+        <span class="job-title">Technical Services Team Leader</span>
+          /
+         <span class="company">Trison UK, Hertfordshire</span>
+        </h3>
         <ul>
           <li>Ran day-to-day operations, achieving 90%+ SLA compliance and improving CSAT through proactive monitoring and stakeholder engagement.</li>
           <li>Integrated monitoring and asset management, improving visibility and making the estate easier to scale.</li>
@@ -81,8 +89,12 @@
       </article>
 
       <article>
-        <h3>Second Line Support Engineer / Trison UK, Hertfordshire</h3>
         <p><em>01/2013 - 03/2016</em></p>
+        <h3>
+        <span class="job-title">Second Line Support Engineer</span>
+          /
+         <span class="company">Trison UK, Hertfordshire</span>
+        </h3>
         <ul>
           <li>Built and maintained secure, compliant imaging baselines (Acronis, Macrium, Clonezilla), reducing project setup time by 80%.</li>
           <li>Performed hardware/software compatibility and stability testing, documenting findings to inform release decisions.</li>
@@ -93,8 +105,12 @@
       </article>
 
       <article>
-        <h3>First Line Support Engineer / Trison UK, Hertfordshire</h3>
         <p><em>07/2010 - 01/2013</em></p>
+        <h3>
+        <span class="job-title">First Line Support Engineer</span>
+          /
+         <span class="company">Trison UK, Hertfordshire</span>
+        </h3>
         <ul>
           <li>Triaged and resolved front-line incidents across multiple platforms, consistently meeting SLA targets.</li>
           <li>Supported onboarding and access management, processing permissions and account requests in line with role-based controls.</li>
@@ -103,8 +119,8 @@
       </article>
     </section>
 
-    <section class="Certifications">
-      <h2>Certifications</h2>
+    <section>
+      <h2 class="Certifications">Certifications</h2>
       <ul>
         <li>Microsoft Certified: Azure Security Engineer Associate</li>
         <li>Cloud Security Alliance: CCSKv5</li>
@@ -112,6 +128,6 @@
         <li>Microsoft Certified: Azure Fundamentals</li>
       </ul>
     </section>
-  </main>
+
 </body>
 </html>

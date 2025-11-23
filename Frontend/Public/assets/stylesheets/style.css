@@ -1,0 +1,37 @@
+main {
+  max-width: 860px;
+  margin: auto;
+}
+
+header {
+  display: flex;                 
+  justify-content: space-between;
+}
+
+.Skills,
+.Experience,
+.Certifications {
+  border-top: 2px solid #555;
+  padding-top: 8px;
+  margin-top: 24px;
+}
+
+.Experience article p {
+  margin: 0 0 2px;
+}
+
+.Experience article h3 {
+  margin-top: 0;
+}
+
+.job-title {
+  color: #007fab;
+}
+
+.company {
+  color: #595959;
+}
+
+.Certifications {
+    color: #007fab;
+}

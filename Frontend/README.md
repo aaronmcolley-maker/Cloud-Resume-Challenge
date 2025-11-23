@@ -56,3 +56,13 @@ The output of the generated HTML is fairly inline wtih our examples, all informa
 - Break added to name to put first name above surname
 - Address moved down as wasn't with other personal details
 - Classes added to sections, Profile, Skills, Experience and Certifications
+
+## CSS Styling
+
+-I had issues getting the job titles and the location different colours as per my example images. I tried using just the h3 heading but this resulted in both colours being adjusted, I tried to just split them into different h3 headings and then give them each a class but this resulted in the formatting being lost.
+After some searching on how to do this I came across the "span" tag which allowed me to break them into two sections, I then assigned a class into each one "job-title" and "company" allowing me to edit each individually
+
+- I now needed to colour match the job title + location as per my CV, to do this I used a free service "colourpicker" to get the hexcode from my existing CV. ![colour picker](./Docs/hex%20colour.jpg)
+
+- We now needed to remove the gaps between the job title and the dates, I was having issues finding the best solution for this when adjusting margins etc I was not getting the result I was expecting. I previously added a class"experience" to the experince section, with some GenAI assistance I found I was able to select all the paragrph and h3 tags within this section using this class and assign the margins to all of them at once. 
+Simple prompt of the HTML code + "How do I create a minimal gap between job title and date"
