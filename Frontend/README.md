@@ -53,3 +53,6 @@ The output of the generated HTML is fairly inline wtih our examples, all informa
 - Our provided CV did include my mobile number and address, we have edited the headers on lines 56 and 58 to state "redacted" for privacy purposes, this has been edited in the generated HTML.
 - We wanted our page to be using HTML5 and we can see the output has selected "!DOCTYPE html" which is required for HTML this also prevent the viewing browser from switcihng to "quirks mode" when attempting to render.
 - As our page will only be using english we can see that it has selected UTF-8 which will serve this purpose.
+- Break added to name to put first name above surname
+- Address moved down as wasn't with other personal details
+- Classes added to sections, Profile, Skills, Experience and Certifications
