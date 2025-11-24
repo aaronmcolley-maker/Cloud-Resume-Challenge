@@ -9,7 +9,8 @@ Living in the UK we want to keep our resume to a PDF format when being sent to r
 We want to ensure our format is ATG freindly to align with company AI checks.
 
 We want to include the following information within our resume in this order:
-- Name & Contact Details
+- Name
+- Contact Details
 - Linkedin Profile
 - Short Summary
 - Skills
@@ -59,10 +60,14 @@ The output of the generated HTML is fairly inline wtih our examples, all informa
 
 ## CSS Styling
 
--I had issues getting the job titles and the location different colours as per my example images. I tried using just the h3 heading but this resulted in both colours being adjusted, I tried to just split them into different h3 headings and then give them each a class but this resulted in the formatting being lost.
+- I had issues getting the job titles and the location different colours as per my example images. I tried using just the h3 heading but this resulted in both colours being adjusted, I tried to just split them into different h3 headings and then give them each a class but this resulted in the formatting being lost.
 After some searching on how to do this I came across the "span" tag which allowed me to break them into two sections, I then assigned a class into each one "job-title" and "company" allowing me to edit each individually
 
 - I now needed to colour match the job title + location as per my CV, to do this I used a free service "colourpicker" to get the hexcode from my existing CV. ![colour picker](./Docs/hex%20colour.jpg)
 
 - We now needed to remove the gaps between the job title and the dates, I was having issues finding the best solution for this when adjusting margins etc I was not getting the result I was expecting. I previously added a class"experience" to the experince section, with some GenAI assistance I found I was able to select all the paragrph and h3 tags within this section using this class and assign the margins to all of them at once. 
 Simple prompt of the HTML code + "How do I create a minimal gap between job title and date"
+
+- The next challenge was aligning the skills section with our template. We needed the unordered list to be in 3 coloumns with 4 bullet points each, but was struggling to get this to go. After reading through "Multiple Columns" on w3schools, I realised the best way to was to break this into 3 seperate lists, and then use a div with a class to edit them all at once, assining the 3 columns and a flexbox for alignment
+
+- Next I needed to colour the bullet points as per the template, after reading an articale on css-tricks, was able to style as per template by sharing a class between each ul and using the marker command with a colour

@@ -8,12 +8,26 @@ header {
   justify-content: space-between;
 }
 
+
 .Skills,
 .Experience,
 .Certifications {
   border-top: 2px solid #555;
   padding-top: 8px;
   margin-top: 24px;
+}
+
+.list-container {;
+  column-count: 3;
+  margin-left: -20px;
+  margin-top: -30px;
+  display:flex;
+  justify-content: space-between;
+}
+
+.list li::marker {
+  color: #007fab;
+
 }
 
 .Experience article p {
