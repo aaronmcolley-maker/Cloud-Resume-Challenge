@@ -1,13 +1,24 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
 main {
   max-width: 860px;
-  margin: auto;
+  margin: 0px auto;
+  padding: 24px 32px;;
+  box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.5);
+  background: #ffffff;
+}
+
+.page-background {
+  background: url(/Frontend/Public/assets/Images/resume_background.jpg)
 }
 
 header {
   display: flex;                 
   justify-content: space-between;
 }
-
 
 .Skills,
 .Experience,

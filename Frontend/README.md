@@ -30,7 +30,7 @@ I have an existing resume using the template above, which is two pages in length
 ![](./Docs/CV%20Page%201.jpg)
 ![](./Docs/CV%20Page%202.jpg)
 
-I do not have much experience with HTML and will be using ChatGPT 5.1 to assist with this process, I will then manually adjust as required.
+I will be using ChatGPT 5.1 to generate the base of my HTML using my already created CV and making adjustments to this from there.
 
 ### Prompt to ChatGPT 5.1
 
@@ -47,7 +47,7 @@ This is what the generated HTML looks like:
 
 ![](./Docs/Nov-23-2025-resume-generation-minimal.jpg)
 
-## HTML Adjustments
+## HTML Refactoring & CSS Styling
 
 The output of the generated HTML is fairly inline wtih our examples, all information has been kept and has mostly followed the format.
 
@@ -57,8 +57,6 @@ The output of the generated HTML is fairly inline wtih our examples, all informa
 - Break added to name to put first name above surname
 - Address moved down as wasn't with other personal details
 - Classes added to sections, Profile, Skills, Experience and Certifications
-
-## CSS Styling
 
 - I had issues getting the job titles and the location different colours as per my example images. I tried using just the h3 heading but this resulted in both colours being adjusted, I tried to just split them into different h3 headings and then give them each a class but this resulted in the formatting being lost.
 After some searching on how to do this I came across the "span" tag which allowed me to break them into two sections, I then assigned a class into each one "job-title" and "company" allowing me to edit each individually
