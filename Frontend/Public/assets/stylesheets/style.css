@@ -11,6 +11,28 @@ main {
   background: #ffffff;
 }
 
+.site-navigation {
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 2px solid #007fab;
+}
+
+.site-navigation nav {
+  max-width: 860px;
+  margin: 3px auto;
+  display: flex;
+  gap: 40px;
+}
+
+.site-navigation a {
+  text-decoration: none;
+  color: #007fab;
+  font-weight: 500;
+}
+
+.site-navigation a:hover {
+  text-decoration: underline;
+}
+
 .page-background {
   background: url(/Frontend/Public/assets/Images/resume_background.jpg)
 }
@@ -19,6 +41,7 @@ header {
   display: flex;                 
   justify-content: space-between;
 }
+
 
 .Skills,
 .Experience,
