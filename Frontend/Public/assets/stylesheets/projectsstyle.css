@@ -1,0 +1,82 @@
+html, body {
+  margin: 0;
+    height: 100%;
+}
+
+
+.page-background {
+  background: url(/Frontend/Public/assets/Images/resume_background.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+
+.site-navigation {
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 2px solid #007fab;
+}
+
+.site-navigation nav {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 8px 32px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.site-navigation a {
+  text-decoration: none;
+  color: #007fab;
+  font-weight: 500;
+}
+
+.site-navigation a:hover {
+  text-decoration: underline;
+}
+
+/* Main "card" area */
+main {
+  max-width: 860px;
+  margin: 40px auto;
+  padding: 24px 32px;
+  box-shadow: 0 1px 9px rgba(0, 0, 0, 0.5);
+  background: #ffffff;
+}
+
+.page-title {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.project-card {
+  display: block;                /* whole card is clickable */
+  border: 1px solid #cccccc;
+  padding: 16px;
+  background: #f9f9f9;
+  text-decoration: none;         /* remove link underline */
+  color: inherit;                /* keep normal text colour */
+  cursor: pointer;               /* show clickable cursor */
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.project-card:hover {
+  background: #f0f8fb;          /* slight discolour on hover */
+  border-color: #007fab;
+}
+
+.project-card h2 {
+  margin: 0 0 6px;
+  font-size: 1.1rem;
+}
+
+.project-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}

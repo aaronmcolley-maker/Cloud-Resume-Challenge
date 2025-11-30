@@ -47,7 +47,7 @@ This is what the generated HTML looks like:
 
 ![](./Docs/Nov-23-2025-resume-generation-minimal.jpg)
 
-## HTML Refactoring & CSS Styling
+## Resume HTML Refactoring & CSS Styling
 
 The output of the generated HTML is fairly inline wtih our examples, all information has been kept and has mostly followed the format.
 
@@ -69,3 +69,22 @@ Simple prompt of the HTML code + "How do I create a minimal gap between job titl
 - The next challenge was aligning the skills section with our template. We needed the unordered list to be in 3 coloumns with 4 bullet points each, but was struggling to get this to go. After reading through "Multiple Columns" on w3schools, I realised the best way to was to break this into 3 seperate lists, and then use a div with a class to edit them all at once, assining the 3 columns and a flexbox for alignment
 
 - Next I needed to colour the bullet points as per the template, after reading an articale on css-tricks, was able to style as per template by sharing a class between each ul and using the marker command with a colour
+
+- I wanted the Navigation bar to follow the page when scrolling, to do so we've made this "sticky" and set to top so that ti scrolls normally until we hit the viewport. z-index 10 has been added to keep it over the body of the page 
+
+## Projects & Home - HTML and CSS
+We've added an addiotnal pages to our website is Projects, Home and with thier own stylesheets, to speed this process up we are using ChatGPT to generate the HTML and CSS, below you can find the promts used in this process:
+
+Projects - Prompts
+'' text
+I want to have the same background image as per the current index.html 
+I want there to be 4 boxes on the page Project 1, Project 2, Project 3 and Project 4 
+These should be in rectangular boxes with a gap between them, two at the top and two below with gaps. 
+The "Project 1" etc should be left aligned in the box in the top left corner with small text under neath
+
+Align the nav bar as per the index page
+Center align the nav bar text on projects page as per the index page
+Make it so the "cards" are links to their relevant projects
+Make it so the "card" its self is clickable and this is shown by a slight discolour when you hover over the card''
+
+Home - Prompts
